@@ -3,10 +3,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
-  background-color: #eee;
+  background-color: #000000;
 }
 body a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ body a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #ffffff;
   backface-visibility: hidden;
   transform: rotateX(0deg);
   transition: 0.5s;
@@ -49,11 +49,11 @@ body a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #ffffff;
   backface-visibility: hidden;
   transform: rotateX(180deg);
   transition: 0.5s;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 .card-back h2 {
@@ -71,6 +71,6 @@ body a {
   line-height: 20px;
 }
 .card-back a:hover {
-  color: #000000;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #000000;
 }
