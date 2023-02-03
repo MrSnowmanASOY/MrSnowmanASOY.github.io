@@ -16,17 +16,16 @@ body a {
   left: 50%;
   height: 400px;
   width: 300px;
-  border-radius: 15px 50px 30px;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
   perspective: 600px;
-  transition: 0.5s;
+  transition: 0.35s;
 }
 .card:hover .card-front {
-  transform: rotateX(-180deg);
+  transform: rotateY(-180deg);
 }
 .card:hover .card-back {
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);
 }
 
 .card-front {
@@ -38,9 +37,9 @@ body a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #9518c7;
   backface-visibility: hidden;
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);
   transition: 0.5s;
 }
 
@@ -52,7 +51,7 @@ body a {
   left: 0;
   background-color: #ffffff;
   backface-visibility: hidden;
-  transform: rotateX(180deg);
+  transform: rotateY(180deg);
   transition: 0.5s;
   color: #000000;
   text-align: center;
