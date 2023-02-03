@@ -2,7 +2,7 @@
 <meta content="Something Somewhere" property="og:title" />
 <meta content="Something is here" property="og:description" />
 <meta content="mrsnowmanasoy.github.io" property="og:url" />
-<meta content="#ff0000" data-react-helmet="true" name="theme-color" />
+<meta content="#56d40c" data-react-helmet="true" name="theme-color" />
 
 <!DOCTYPE html>
 <html>
@@ -10,6 +10,37 @@
         <title>Something Somewhere</title>
     </head>
     <body>
+        <style>
+            :root {
+                background: black;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #56d40c;
+                padding: 3rem;
+            }
+            
+            p {
+                animation: wobble 30ms infinite;
+                width: 400px;
+            }
 
+            @keyframes wobble {
+                0% {
+                    transform: rotate(-0.1deg);
+                    color: #56d40c;
+                }
+
+                10% {
+                    transform: rotate(0.1deg) translate(0px, 0px);
+                    color: #56d40c;
+                }
+
+                100% {
+                    transform: rotate(-0.1deg);
+                    color: #56d40c;
+                }
+            }
+        </style>
+        <p>Something is here...</p>
+        <p>It'll be clearer soon...</p>
     </body>
 </html>
