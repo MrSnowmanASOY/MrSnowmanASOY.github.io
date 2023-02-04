@@ -10,10 +10,10 @@ body a {
   text-decoration: none;
 }
 
-.card {
+.card0 {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%-200px;
   height: 400px;
   width: 300px;
   transform: translate(-50%, -50%);
@@ -21,6 +21,20 @@ body a {
   perspective: 600px;
   transition: 0.35s;
 }
+
+.card1 {
+  position: absolute;
+  top: 50%;
+  left: 50%+200px;
+  height: 400px;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.35s;
+}
+
+
 .card:hover .card-front {
   transform: rotateY(-180deg);
 }
@@ -28,10 +42,25 @@ body a {
   transform: rotateY(0deg);
 }
 
-.card-front {
+.card-front0 {
   height: 100%;
   width: 100%;
   background-image: url(https://cdn.discordapp.com/attachments/1064442030954119219/1070991622780768307/IMG_20230201_225014.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #9518c7;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+}
+
+.card-front1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://static.wikia.nocookie.net/rain-world-game/images/f/f2/Slugcat.jpg/revision/latest?cb=20170326003937);
   background-position: 50% 50%;
   background-size: cover;
   position: absolute;
