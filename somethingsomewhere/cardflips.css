@@ -35,7 +35,10 @@ body a {
 }
 
 
-.card:hover .card-front {
+.card:hover .card-front0 {
+  transform: rotateY(-180deg);
+}
+.card:hover .card-front1 {
   transform: rotateY(-180deg);
 }
 .card:hover .card-back {
