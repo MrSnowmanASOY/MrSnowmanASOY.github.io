@@ -21,8 +21,6 @@ body a {
   perspective: 600px;
   transition: 0.35s;
 }
-
-
 .card:hover .card-front {
   transform: rotateY(-180deg);
 }
@@ -44,7 +42,6 @@ body a {
   transform: rotateY(0deg);
   transition: 0.5s;
 }
-
 
 .card-back {
   height: 100%;
