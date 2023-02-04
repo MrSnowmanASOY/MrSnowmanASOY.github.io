@@ -13,7 +13,7 @@ body a {
 .card {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 50%;
   height: 400px;
   width: 300px;
   transform: translate(-50%, -50%);
@@ -30,7 +30,7 @@ body a {
   transform: rotateY(0deg);
 }
 
-.card-front0 {
+.card-front {
   height: 100%;
   width: 100%;
   background-image: url(https://cdn.discordapp.com/attachments/1064442030954119219/1070991622780768307/IMG_20230201_225014.png);
