@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>making shtuff</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card {
+            height: 321.5px;
+            width: 221px;
+            position: relative;
+            perspective: 1000px;
+            border-radius: 10px;
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 99%;
+            backface-visibility: hidden;
+            transition: transform 0.4s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .front {
+            background-color: #fff;
+            z-index: 2;
+        }
+
+        .back {
+            transform: rotateY(180deg);
+            background-color: #2F3136;
+        }
+
+        .card:hover .front {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .back {
+            transform: rotateY(0deg);
+        }
+
+        .front img {
+            width: 125%;
+            height: 125%;
+            object-fit: cover;
+            clip-path: inset(28px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.discordapp.com/attachments/1034898524673953832/1075748148397486230/card.jpg"
+                        alt="Card image 1">
+                    <!-- <h2>Front of Card 1</h2>
+                    <p>Card content goes here</p> -->
+                </div>
+                <div class="back">
+                    <h2>Back of Card 1</h2>
+                    <p>Card content goes here</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.discordapp.com/attachments/1034898524673953832/1075748116805996544/card.jpg"
+                        alt="Card image 2">
+                    <!-- <h2>Front of Card 2</h2>
+                    <p>Card content goes here</p> -->
+                </div>
+                <div class="back">
+                    <h2>Back of Card 2</h2>
+                    <p>Card content goes here</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.discordapp.com/attachments/1034898524673953832/1075760954014453830/card.jpg"
+                        alt="Card image 3">
+                    <!-- <h2>Front of Card 3</h2>
+                    <p>Card content goes here</p> -->
+                </div>
+                <div class="back">
+                    <h2>Back of Card 3</h2>
+                    <p>Card content goes here</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.discordapp.com/attachments/1034898524673953832/1075761049141248010/card.jpg"
+                        alt="Card image 4">
+                    <!-- <h2>Front of Card 4</h2>
+                    <p>Card content goes here</p> -->
+                </div>
+                <div class="back">
+                    <h2>Back of Card 4</h2>
+                    <p>Card content goes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
