@@ -1,19 +1,21 @@
-<title>Cards</title>
-<meta content="Flippy Modual Cards" property="og:title" />
-<meta content="Got some cards that do a little Flippy" property="og:description" />
-<meta content="mrsnowmanasoy.github.io" property="og:url" />
-<meta content="#56d40c" data-react-helmet="true" name="theme-color" />
-
-
 <!DOCTYPE html>
 <html>
 
 <head>
+    <title>Cards</title>
+    <meta content="Got some cards that do a little Flippy" property="og:description" />
+    <meta content="Flippy Modual Cards" property="og:title" />
+    <meta content="#56d40c" data-react-helmet="true" name="theme-color" />
+    <meta content="mrsnowmanasoy.github.io" property="og:url" />
     <title>making shtuff</title>
     <style>
 
         :root {
             font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
         }
 
         body {
@@ -24,18 +26,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .card-container {
+            padding: 30px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
-            gap: 50px;
+            gap: 25px;
+            overflow: hidden;
         }
 
         .card {
+            z-index: 1;
             height: 321.5px;
             width: 221px;
             position: relative;
@@ -91,6 +96,7 @@
         }
 
         .card:hover {
+            z-index: 2;
             animation: flip-grow 200ms;
         }
         
