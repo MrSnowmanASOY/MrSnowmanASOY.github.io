@@ -11,6 +11,11 @@
 <head>
     <title>making shtuff</title>
     <style>
+
+        :root {
+            font-family: sans-serif;
+        }
+
         body {
             background-color: black;
         }
@@ -46,7 +51,7 @@
             height: 321.5px;
             width: 221px;
             backface-visibility: hidden;
-            transition: transform 0.3s;
+            transition: transform 0.1s;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -55,9 +60,29 @@
             color: #ffffff;
         }
 
+        @keyframes flip-grow {
+            0% {
+                transform: scale(1);
+            }
+            90% {
+                transform: scale(1);
+            }
+            95% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .back h2 {
+            text-align: center;
+        }
+        
         .front {
             background-color: #ffffff00;
             z-index: 2;
+            pointer-events: none;
         }
 
         .back {
@@ -65,6 +90,14 @@
             background-color: #2F3136;
         }
 
+        .card:hover .front {
+            animation: flip-grow 500ms;
+        }
+        
+        .card:hover .back {
+            animation: flip-grow 500ms;
+        }
+        
         .card:hover .front {
             transform: rotateY(180deg);
         }
@@ -94,7 +127,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Name: Undyne<br>Series: Undertale</h2>
+                    <h2>Name: Undyne<br>Series: Undertale</h2>
                         <p> V-1 • G-1555 • Wind<br><br>
                             Owned: @Mr Snowman<br>
                             Server: 973635196048007178<br><br>
@@ -114,7 +147,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Name: Caviar<br>Series: Food Fantasy</h2>
+                    <h2>Name: Caviar<br>Series: Food Fantasy</h2>
                         <p> V-1 • G-935 • Light<br><br>
                             Owned: @Mr Snowman<br>
                             Server: 973635196048007178<br><br>
@@ -134,7 +167,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -147,7 +180,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -160,7 +193,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -173,7 +206,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -186,7 +219,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -199,7 +232,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -212,7 +245,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -225,7 +258,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -238,7 +271,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -251,7 +284,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -264,7 +297,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
@@ -277,7 +310,7 @@
                     <p>Card content goes here</p> -->
                 </div>
                 <div class="back">
-                    <co <h2>Placeholder Heading</h2>
+                    <h2>Placeholder Heading</h2>
                         <p> Placeholder Desc</p>
                 </div>
             </div>
