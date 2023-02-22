@@ -51,7 +51,7 @@
             height: 321.5px;
             width: 221px;
             backface-visibility: hidden;
-            transition: transform 0.1s;
+            transition: transform 0.2s;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -64,10 +64,10 @@
             0% {
                 transform: scale(1);
             }
-            90% {
+            20% {
                 transform: scale(1);
             }
-            95% {
+            40% {
                 transform: scale(1.5);
             }
             100% {
@@ -90,12 +90,8 @@
             background-color: #2F3136;
         }
 
-        .card:hover .front {
-            animation: flip-grow 500ms;
-        }
-        
-        .card:hover .back {
-            animation: flip-grow 500ms;
+        .card:hover {
+            animation: flip-grow 200ms;
         }
         
         .card:hover .front {
